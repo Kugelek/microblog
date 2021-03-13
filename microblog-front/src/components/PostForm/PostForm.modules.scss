@@ -1,0 +1,114 @@
+.customEditor {
+  &__root {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 1rem;
+    padding: 1.5rem;
+    width: 70vw;
+    margin: auto;
+    margin-top: 7.5vh;
+    margin-bottom: 5vh;
+    min-height: 60vh;
+  }
+
+  &__textfield {
+    border-top: 1px solid #dbdbdb;
+    cursor: text;
+    font-size: 1.2rem;
+    min-height: 50vh;
+    padding-top: 2rem;
+  }
+  &__blockquote {
+    font-family: "Hoefler Text", serif;
+    font-style: italic;
+    margin: 16px 0;
+    padding: 10px 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '"';
+      font-family: "Hoefler Text", serif;
+      font-size: 5rem;
+      left: -0.5rem;
+      color: #aaa;
+      opacity: 0.4;
+      top: -2rem;
+    }
+    &::after {
+      position: absolute;
+      content: '"';
+      font-family: "Hoefler Text", serif;
+      font-size: 5rem;
+      left: -1.5rem;
+      color: #aaa;
+      opacity: 0.4;
+      top: 1rem;
+    }
+  }
+  &__controls {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    user-select: none;
+  }
+  &__button {
+    color: #999;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+
+    &--active {
+      color: white;
+      background-color: #4b9576;
+      transition: 0.1s all ease-in-out;
+      border-radius: 3px;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+
+.title {
+  &__box {
+    margin: 5vh 20rem;
+  }
+  &__label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.details__container {
+  margin: 0 20rem;
+}
+.submit-post {
+  margin-left: 20rem;
+  padding: 0.8rem 2.3rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: 1px solid green;
+  background-color: #4b9576;
+  color: white;
+  text-transform: uppercase;
+}
+
+.htmlbox {
+  margin-left: 20rem;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+  width: 40vw;
+  min-height: 10vh;
+  background-color: #efefef;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-left: 2rem;
+    max-width: 38vw;
+  }
+}
+
+.btns {
+  margin-left: 20rem;
+}

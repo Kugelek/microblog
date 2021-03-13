@@ -1,0 +1,58 @@
+.wall {
+  width: 60vw;
+
+  background-color: #fff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vh;
+}
+
+.bg {
+  background-color: #eee;
+  width: 100vw;
+  margin-top: 0;
+}
+
+.layout {
+  padding-top: 4vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.actionbar {
+  margin-top: 4vh;
+  width: 81vw;
+  background-color: #fff;
+  height: 9.5vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  & > * {
+    margin: 2rem 2rem;
+  }
+}
+
+.btn-small {
+  padding: 0.4rem 1.1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid green;
+  background-color: #4b9576;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.search-container {
+  & > * {
+    margin: 0.25rem 0.35rem;
+  }
+}
+.sort-container {
+  & > * {
+    margin: 0.25rem 0.35rem;
+  }
+}

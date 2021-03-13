@@ -1,0 +1,41 @@
+.post {
+  width: 50vw;
+  margin: auto;
+  margin-top: 5vh;
+  border-bottom: 2px solid #efefef;
+  padding-bottom: 3.5vh;
+
+  &__content {
+    font-size: 1.5rem;
+    color: #444;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #4b9576;
+    margin: 2.5vh 0;
+  }
+
+  &__box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5vh;
+  }
+}
+
+.img-placeholder {
+  border: 1px solid green;
+  background-color: lightblue;
+  opacity: 0.4;
+  height: 30rem;
+  width: 50vw;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #4b9576;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    color: white;
+    font-size: 2.5rem;
+    margin: 3vh 2vw;
+    transition: 1s all ease-in-out;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+  &__sublogo {
+    font-size: 0.9rem;
+    margin-top: -0.8rem;
+  }
+  &__logo-box {
+    margin-left: 1rem;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    margin: 3vh 2vw;
+  }
+  &__item {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

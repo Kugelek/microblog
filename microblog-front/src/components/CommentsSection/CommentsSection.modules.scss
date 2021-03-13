@@ -1,0 +1,95 @@
+.comments {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1rem;
+  padding: 1.5rem;
+  width: 70vw;
+  margin: auto;
+  margin-top: 7.5vh;
+  margin-bottom: 5vh;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    margin-bottom: 2rem;
+    color: #444;
+  }
+}
+
+.MuiInput-root .input__content {
+  width: 40vw;
+  margin-bottom: 5rem;
+}
+
+.MuiInput-root > .input__author {
+  width: 10vw;
+  margin-bottom: 1rem;
+}
+.Mui-focused {
+  color: green;
+}
+
+.comment {
+  width: 60vw;
+  margin-left: 2vw;
+  margin-top: 2.5rem;
+  padding: 0.5rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__data {
+    width: 55vw;
+  }
+  &__username {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  &__content {
+    color: #666;
+  }
+}
+
+.btn-small {
+  padding: 0.4rem 1.1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid green;
+  background-color: #4b9576;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  cursor: pointer;
+  max-width: 10vw;
+  &--red {
+    padding: 0.4rem 1.1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: lightcoral;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+}
+.input-small {
+  max-width: 10vw;
+  margin: 1.5rem 2rem;
+}
+
+.btns {
+  display: flex;
+}
+.update-err {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  color: red;
+}
+.create-err {
+  color: red;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}

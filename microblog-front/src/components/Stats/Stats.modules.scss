@@ -1,0 +1,30 @@
+.stats {
+  margin-left: 20vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  &__circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4b9576;
+    font-size: 1.4rem;
+
+    border-radius: 50%;
+    padding: 0.25rem 0.4rem;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    & > * {
+      padding: 0.25rem 0.4rem;
+
+      color: #4b9576;
+    }
+  }
+  &__highlight {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+}
