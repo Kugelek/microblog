@@ -1,15 +1,32 @@
 .header {
   width: 100vw;
   height: 10vh;
-  background-color: #4b9576;
+  background-color: white;
   margin-top: 0;
   display: flex;
   justify-content: space-between;
 
+  &::after {
+    display: block;
+
+    background-color: #00bfb2;
+    background-image: linear-gradient(315deg, #028090 0%, #00bfb2 74%);
+
+    transform: skew(-15deg);
+    content: "";
+    width: 45vw;
+
+    overflow-x: hidden;
+    height: inherit;
+    position: absolute;
+    right: 5rem;
+    z-index: 10;
+  }
+
   &__logo {
-    color: white;
     font-size: 2.5rem;
-    margin: 3vh 2vw;
+    width: 70%;
+    padding: 1rem 2rem;
     transition: 1s all ease-in-out;
     cursor: pointer;
     &:hover {
@@ -26,20 +43,54 @@
 }
 
 .navigation {
+  z-index: 20;
+
+  a:visited,
+  a:link,
+  a:active {
+    color: #035a66;
+  }
+
   &__list {
     list-style: none;
     display: flex;
     font-size: 1.5rem;
-    margin: 3vh 2vw;
+    margin: 3vh 10vw;
   }
   &__item {
-    padding: 0.5rem 1.5rem;
     color: white;
+    font-weight: 600;
+    opacity: 0.95;
+    border-bottom: 4px solid rgba(#ffffff, 0.07);
+    font-size: 1.8rem;
+    margin: 0.2rem 1.2rem;
+    padding: 0.6rem 2.5rem;
+    transition: 0.3s all ease-in-out;
     cursor: pointer;
-    opacity: 0.8;
-    transition: 0.4s all ease-in-out;
     &:hover {
       opacity: 1;
+      border-bottom: 4px solid rgba(#ffffff, 0.15);
+      transform: skew(3deg);
     }
+  }
+}
+
+.login-btn {
+  padding: 0.5rem 1.5rem;
+  color: #035a66;
+  font-weight: 600;
+  background-color: white;
+  margin: 0.2rem 1rem;
+  opacity: 0.9;
+  border-radius: 2.5rem;
+  margin-left: 10vw;
+  padding: 1.1rem 2.5rem;
+  cursor: pointer;
+
+  transition: 0.4s all ease-in-out;
+  &:hover {
+    opacity: 1;
+    color: #333;
+    transform: skew(3deg);
   }
 }
